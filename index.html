@@ -104,22 +104,50 @@
             fill: currentColor;
         }
 
-        @media (max-width: 768px) {
-            .company-name {
-                font-size: 3rem;
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 95vw;
+                padding: 0 10px;
             }
-
+            .company-name {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
             .tagline {
                 font-size: 1rem;
+                margin-bottom: 18px;
             }
-
             .intro {
-                font-size: 1.3rem;
+                font-size: 1.1rem;
+                max-width: 95vw;
             }
-
+            .intro .organic {
+                font-size: 1.1rem;
+            }
             .social-links {
                 flex-direction: column;
-                gap: 20px;
+                gap: 18px;
+            }
+            footer {
+                padding: 20px 5px;
+            }
+        }
+        @media (max-width: 600px) {
+            .company-name {
+                font-size: 1.5rem;
+            }
+            .tagline {
+                font-size: 0.9rem;
+            }
+            .intro {
+                font-size: 1rem;
+            }
+            .intro .organic {
+                font-size: 1rem;
+            }
+            .social-links svg {
+                width: 20px;
+                height: 20px;
             }
         }
     </style>
@@ -147,7 +175,7 @@
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.162 2H16.62l-4.62 6.62L7.38 2H1.838l7.38 10.38L1.5 22h5.542l4.538-6.5L16.62 22h5.542l-7.38-10.38L22.162 2zm-3.38 18l-5.3 he8-7.5L4.38 20H2.62l7.38-10.38L2.162 4h1.758l5.38 7.5L19.62 4h1.758l-7.38 10.38L19.62 20z"/>
                     </svg>
-                    Twitter
+                    
                 </a>
             <a href="mailto:Admin@wooing.us">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -155,9 +183,9 @@
                 </svg>
                 Email
             </a>
-            <a>
-                a
-            </a>
+            
+                
+            
         </div>
     </footer>
 </body>
